@@ -2,8 +2,8 @@
 
 
 h2 {
-    color: teal;
-    background-color: plum;
+    color: #5FCFFC;
+    background-color:rgb(89,151,0);
 }
 
 
@@ -15,4 +15,10 @@ button {
 p {
     color: olive;
     background: orange;
+}
+
+
+/* shorthand if digits for each color same e.g. instead of #000000 can use #000 */
+body {
+    background-color: #000;
 }
