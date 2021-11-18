@@ -7,6 +7,7 @@ div {
 h1 {
     background-color: pink;
     width: 100px;
+    padding: 0px 0px 0px 40px;
 }
 
 #divone {
@@ -22,6 +23,7 @@ h1 {
     border-style: dashed;
     border-left-color: purple;
     border-left-width: 8px;
+    padding-right: 50px;
 }
 
 
@@ -30,4 +32,12 @@ h1 {
     border: 4px solid red;
     border-left-style: dotted;
     border-radius: 20%;
+    padding: 10px;
 }
+
+/* padding shorthand can be used in 4 ways. Padding: 10px (applies to all sides). padding: 5px (top and bottom) 20px (left and right). padding: 1px (top) 2px (horizontal) 3px (bottom). padding: 1px (top) 2px (right) 3px (bottom) 4px (left). */
+
+/* margin - spacing outside of border
+padding - spacing inside of border
+content box - content
+border - border */
