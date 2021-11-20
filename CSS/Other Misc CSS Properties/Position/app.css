@@ -1,0 +1,44 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: red;
+}
+
+#static #middle {
+    position: static;
+}
+
+/* if a element is positioned as static top right bottom left won't impact/work */
+
+#relative #middle {
+    position: relative;
+    top: -100px;
+    left: 100px
+}
+
+/* moves relative to where it normally would be */
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* positioned relative to parent. Parent must be positioned relative. */
+
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
