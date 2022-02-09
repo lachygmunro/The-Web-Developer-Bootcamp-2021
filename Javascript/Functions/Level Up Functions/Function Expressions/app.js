@@ -15,3 +15,8 @@ const add = function (x, y) {
 add(3, 4)
 
 
+// Coding Exercise 44
+const square = function (num) {
+    return num * num;
+}
+
