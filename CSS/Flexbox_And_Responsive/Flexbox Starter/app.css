@@ -14,7 +14,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;   /* wrap nowrap wrap-reverse */
-    align-items: center;
+    align-items: center; /* baseline will align on items in div */
 }
 
 #container div {
