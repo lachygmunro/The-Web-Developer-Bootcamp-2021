@@ -39,3 +39,38 @@ const maths = x => {
 const greet = str => {
     return `Hey ${str}!`
 }
+
+
+//IMPLICIT RETURN
+//only with arrow functions. single expression.
+
+//normal syntax
+const rollDie = () => {
+    return Math.floor(Math.random() * 6) + 1
+}
+
+//implicit return syntax.
+const rollDie = () => ( //parenthesis instead of curly braces.
+    Math.floor(Math.random() * 6) + 1 //no return keyword.
+)
+
+const add = (a, b) => (
+    a + b
+)
+
+//one line implicit return
+const add = (a, b) => a + b
+
+
+
+
+
+const newMovies = movies.map(function (movie) {
+    return `${movie.title} - ${movie.score / 10}`
+})
+
+const newMovies = movies.map((movie) => {
+    return `${movie.title} - ${movie.score / 10}`
+})
+
+const newMovies = movies.map(movie => (`${movie.title} - ${movie.score / 10}`))
