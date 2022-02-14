@@ -32,12 +32,6 @@ words.some(word => word[0] === 'Z'); //false
 words.some(w => w.includes('cake')); //true
 
 
-
-function allEvens(arr) {
-    arr.every(i => 
-        return i % 2 === 0;)
-}
-
 //Coding Exercise 50: Some/Every exercise
 function allEvens(arr) {
     return arr.every(i => i % 2 === 0)
