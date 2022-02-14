@@ -33,3 +33,14 @@ const allPets = [...cats, ...dogs];
 
 
 //Spread with Objects
+//Copies properties from one object into another object literal.
+
+const feline = { legs: 4, family: 'Felidae' };
+const canine = { family: 'Caninae', furry: true };
+
+const dog = { ...canine, isPet: true };
+//{family: 'Caninae', furry: true, isPet: true}
+
+const lion = { ...feline, genus: 'Panthera' };
+//{legs: 4, family: 'Felidae', genus: 'Panthera'}
+
