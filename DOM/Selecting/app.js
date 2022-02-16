@@ -29,8 +29,20 @@ for (let img of squareImages) {
 
 
 
-const links = document.querySelectorAll('p a');
+//querySelector
+document.querySelector('h1'); //Finds first h1 element
+
+document.querySelector('#red'); //Finds first element with ID of red
+
+document.querySelector('.big'); //Finds first elemnent with class of big
+
+//querySelectorAll
+const links = document.querySelectorAll('p a'); //descendant selector. All anchor tags within paragraphs.
 
 for (let link of links) {
     console.log(link.href)
 }
+
+//Coding Exercise 52: querySelector Practice
+const doneTodos = document.querySelectorAll('.done');
+const checkbox = document.querySelector('#scales');
