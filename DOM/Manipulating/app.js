@@ -82,3 +82,39 @@ for (let letter of heading) {
     i++;
 }
 
+
+//Manipulate classes - ClassList
+
+const h2 = document.querySelector('h2');
+h2.classList.add('purple');
+h2.classList.add('border'); //add border
+h2.classList.remove('border'); //remove border
+h2.classList.toggle('purple'); //toggle purple on and off
+
+//Coding Exercise 57: ClassList Practice
+const list = document.querySelectorAll('li');
+
+for (let li of list) {
+    li.classList.toggle('highlight');
+}
+
+
+//selecting parent element. traverse upwards.
+const firstBold = document.querySelector('b');
+firstBold.parentElement
+firstBold.parentElement.parentElement
+
+//selecting child element/s. traverse down.
+const paragraph = document.querySelector('p');
+paragraph.childElementCount  //shows how many child elements there are. displayed in order as displayed in DOM
+paragraph.children[0] //access child element based off index from childElementCount
+
+
+//selecting sibling elements
+const squareImg = document.querySelector('.square');
+squareImg.nextElementSibling
+squareImg.previousElementSibling
+
+
+
+
