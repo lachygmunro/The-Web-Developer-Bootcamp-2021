@@ -117,4 +117,19 @@ squareImg.previousElementSibling
 
 
 
+//append & appendChild
+const newH3 = document.createElement('h3'); //creates new empty h3
+newH3.innerText = 'I am new!' //text within h3
+document.body.appendChild(newH3); //append
+
+
+// Coding Exercise 58: 100 button insanity exercise
+let cont = document.querySelector('div');
+
+for (let i = 0; i < 100; i++) {
+    const butt = document.createElement('button');
+    butt.innerText = 'Hey!';
+    cont.appendChild(butt);
+}
+
 
