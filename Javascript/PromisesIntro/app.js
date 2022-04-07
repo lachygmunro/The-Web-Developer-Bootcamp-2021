@@ -23,7 +23,7 @@ const fakeRequestPromise = (url) => {
     })
 }
 
-// callback version - extended
+
 
 // fakeRequestCallback('books.com/page1',
 //     function (response) {
